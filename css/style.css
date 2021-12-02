@@ -116,7 +116,7 @@ h6,
 #title-img {
   border: 2px;
   padding: 10px;
-  border-radius: 25px;
+  border-radius: 0px 0px 5px 5px;
 }
 
 p {

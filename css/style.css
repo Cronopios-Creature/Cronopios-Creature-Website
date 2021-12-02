@@ -25,7 +25,7 @@ html {
 
 @font-face{
   font-family: kefa;
-  src: url(kefa.TTF);
+  src: url(/font/kefa.TTF);
 }
 
 body {

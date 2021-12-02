@@ -66,8 +66,7 @@ body {
     .boxed-page .container {
       max-width: 1080px;
       padding-left: 30px;
-      padding-right: 30px;
-      border-radius:10px; } }
+      padding-right: 30px;} }
 
 h1 {
   font-size: 4.8rem; }

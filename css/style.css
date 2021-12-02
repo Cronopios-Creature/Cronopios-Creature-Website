@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-
 html {
   font-size: 62.5%;
   overflow-x: hidden; }
+
 #loading {
   position: fixed;
   display: block;
@@ -23,13 +22,19 @@ html {
   margin-right: auto;
   z-index: 100;
 }
+
+@font-face{
+  font-family: kefa;
+  src: url(kefa.TTF);
+}
+
 body {
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
-  font-family: 'Libre Baskerville', serif;
+  font-family: kefa;
   font-weight: 300;
   font-size: 1.6rem; 
   border-radius: 30px;
@@ -110,7 +115,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Libre Baskerville', serif;
+  font-family: kefa;
   margin-top: 0; }
 
 p {
@@ -203,10 +208,6 @@ box-shadow: 1px 1px 16px 1px rgba(0,0,0,0.6);
 .topnav-right a:hover{
   color: dimgrey;
 }
-
-
-
-
 
 .icons{
   bottom: 0;

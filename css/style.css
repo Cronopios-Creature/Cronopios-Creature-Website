@@ -10,7 +10,7 @@ html {
   top: 0;
   left: 0;
   text-align: center;
-  opacity: 0.7;
+  opacity: 0;
   background-color: #fbf2e0;
   z-index: 99;
 }

@@ -114,6 +114,12 @@ h6,
   font-family: 'Libre Baskerville', serif;
   margin-top: 0; }
 
+#title-img {
+  border: 2px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
 p {
   font-size: 1.6rem;
   font-weight: 300;

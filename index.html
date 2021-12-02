@@ -22,15 +22,16 @@
 		
     <div class="container">
         
-            
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/arrow.png"> UP </button>
+    
         </a>
         <div class="header" id="myheader">
             <nav id="nav" class="sticky">
                 
                 <a href="index.html" class="logo"><img src="img/logo.jpg" style="max-width: 4%; display: inline-block;"> </a> 
-            
+                
                 <div class="topnav-right" style="padding: 14px 16px; float:right; display: inline-block; position: absolute; direction: rtl;">
-                <a href="index.html">  ROADMAP <a href="">  </a></a> 
+                <a href="#ROADMAP">  ROADMAP <a href="">  </a></a> 
                 <a href="#">  BENEFITS  </a> 
                 <a href="#" style="margin-right: 25px;">  FAQ    | </a>
                 <a href="https://twitter.com/cronopiosNFT"><img  src="img/twitterb.png" style="max-width: 4%; float: right; margin-left: 20px; "></a>
@@ -50,14 +51,17 @@
 </div>		<section id="gtco-who-we-are" class="bg-white">
     <div class="container">
         <div class="section-content">
+            <div>
             <div class="title-wrap">
+                <img class="" src="img/title.jpg" style="min-width: 100%;">
 
-                <div class="about_img"><img src="img/banner.jpg" style="max-width: 100%;" ></div>
+            </div>    
 
             </div>
             
             <div class="row text-center">
-                <div class="col-md-4 col-sm-6 ">
+                <div class="col-md-4 col-sm-6 " id="ROADMAP">
+                    <div class="about_img"><img src="img/banner.jpg" data-aos="fade-up" style="max-width: 100%;" ></div>
                     <img class="" src="img/img1.png" data-aos="fade-up">
  
                 </div>
@@ -104,10 +108,11 @@
 <section id="gtco-section-featurettes" class="featurettes bg-white">
     <div class="col-md-6">
          <nav id="nav" class="icons">
-            <a href="https://twitter.com/cronopiosNFT"><img src="img/twitter.png" style="max-width: 3%;" ></a></li>
-            
-                    
-            <a href="https://discord.com/invite/CPPd5Vev"><img src="img/discord.png" style="max-width: 4%;" ></a></li>
+                <a href="index.html" class="logo"><img src="img/logodark.jpg" style="max-width: 9%; display: inline-block;"> </a> 
+                <a style="padding: 30px 210px; text-align: center; display: inline-block; position: absolute; color: white;">© 2021. Cronopio, All Rights Reserved. </a>
+                <div class="topnav-right" style="padding: 14px 16px; float:right; display: inline-block; position: absolute; direction: rtl;">
+                <a href="https://twitter.com/cronopiosNFT"><img  src="img/twitter.png" style="max-width: 4%; float: right;  "></a>
+                <a href="https://discord.com/invite/CPPd5Vev"><img  src="img/discord.png" style="max-width: 5%; float: right;"></a>
             
                
          </nav>
@@ -127,6 +132,7 @@
 </div>
 	<!-- Javascript files-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type = "text/javascript" src="js/script.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -136,12 +142,13 @@
       });
     </script>
     <script>
-	  $(window).on("load",function() {
-	    $('#loading').hide();
-	  });
-	</script>
+  $(window).on("load",function() {
+    $('#loading').hide();
+  });
+</script>
 
 
 	
 </body>
 </html>
+

@@ -246,4 +246,46 @@ box-shadow: 1px 1px 16px 1px rgba(0,0,0,0.6);
 #myBtn:hover {
   background-color: #060c20;
 }
+.accordion {
+  background-color: #060c20;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.4s;
+}
 
+.active, .accordion:hover {
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,12,32,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  font-weight: bold;
+  padding: 0 18px;
+  background-color: #fbf2e0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/* Main Colors 
+#fbf2e0
+#060c20

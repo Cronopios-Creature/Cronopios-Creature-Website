@@ -262,9 +262,13 @@ box-shadow: 1px 1px 16px 1px rgba(0,0,0,0.6);
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
+.active2, .accordion:hover {
   background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,12,32,1) 35%, rgba(0,212,255,1) 100%);
+}
+/*FONDO DEL CARRUSEL*/
+.active{
+  background-color: #fbf2e0;
 }
 /* Accordion */
 .accordion:after {

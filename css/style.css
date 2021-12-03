@@ -265,7 +265,7 @@ box-shadow: 1px 1px 16px 1px rgba(0,0,0,0.6);
   background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,12,32,1) 35%, rgba(0,212,255,1) 100%);
 }
-
+/* Accordion */
 .accordion:after {
   content: '\002B';
   color: #777;
@@ -289,3 +289,4 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,12,32,1) 35%, rgba(
 /* Main Colors 
 #fbf2e0
 #060c20
+*/

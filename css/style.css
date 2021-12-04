@@ -161,8 +161,8 @@ nav.sticky {
   padding-right: 10px;
   color: white;
   background-color: #fbf2e0;
--webkit-box-shadow: 1px 1px 16px 1px rgba(0,0,0,0.6); 
-box-shadow: 1px 1px 16px 1px rgba(0,0,0,0.6);
+  -webkit-box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47); 
+box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47);
   border-radius: 0; 
   border-bottom-left-radius:5px;
   border-bottom-right-radius:5px;

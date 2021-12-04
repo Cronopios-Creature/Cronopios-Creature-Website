@@ -146,7 +146,7 @@ a:hover {
   text-decoration: none;
   color: #d05165; }
 
-
+/* Nav */
 
 nav.sticky {
     position: fixed;
@@ -211,7 +211,7 @@ box-shadow: 1px 1px 16px 1px rgba(0,0,0,0.6);
 .topnav-right a:hover{
   color: dimgrey;
 }
-
+/* Footer */
 .icons{
   bottom: 0;
   width: 100%;
@@ -229,7 +229,6 @@ box-shadow: 1px 1px 16px 1px rgba(0,0,0,0.6);
   padding: 10px 20px;
 
 }
-
 #title{
   border-radius: 5px;
 }
@@ -252,8 +251,8 @@ box-shadow: 1px 1px 16px 1px rgba(0,0,0,0.6);
 }
 
 #myBtn:hover {
- background: rgb(2,0,36); 
- background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,12,32,1) 35%, rgba(0,212,255,1) 100%);
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,12,32,1) 42%, rgba(251,242,224,1) 100%);
 }
 .accordion {
   background-color: #060c20;
@@ -272,7 +271,7 @@ box-shadow: 1px 1px 16px 1px rgba(0,0,0,0.6);
 
 .active2, .accordion:hover {
   background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,12,32,1) 35%, rgba(0,212,255,1) 100%);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,12,32,1) 42%, rgba(251,242,224,1) 100%);
 }
 /*FONDO DEL CARRUSEL*/
 .active{
@@ -353,7 +352,6 @@ button {
     height: 50px;
     text-align: center;
     font-size: 20px;
-    border-radius: 5px;
 }
 .contact_bt {
     width: 43%;
@@ -364,7 +362,6 @@ button {
     text-align: center;
     font-size: 20px;
     margin-left: 20px;
-    border-radius: 5px;
 }
 
 .FAQ p{

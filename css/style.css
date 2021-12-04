@@ -1,3 +1,6 @@
+@import url(owl.carousel.min.css);
+@import url(animate.min.css);
+
 html {
   font-size: 62.5%;
   overflow-x: hidden; }
@@ -149,7 +152,7 @@ nav.sticky {
     position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 99;
     max-width: 1024px;
   margin: 0 auto;
   left: 0;
@@ -226,6 +229,7 @@ box-shadow: 1px 1px 16px 1px rgba(0,0,0,0.6);
   padding: 10px 20px;
 
 }
+
 #myBtn {
   z-index: 200;
   display: none;
@@ -291,6 +295,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,12,32,1) 35%, rgba(
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+.navbar-form input {
+     border: none !important;
+}
+
+
 /*CARRUSEL*/
 
 
@@ -303,9 +312,12 @@ button {
 
 .header_section {
   width: 100%;
-  float: left;
   background-color:#fbf2e0;
+  
 
+}
+.row{
+  display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;
 }
 
 
@@ -349,14 +361,14 @@ button {
     margin-left: 20px;
 }
 
+.FAQ p{
+ text-align: center !important;
+
+
+}
 
 
 
-
-/* Main Colors 
-#fbf2e0
-#060c20
-*/
 /* Main Colors 
 #fbf2e0
 #060c20

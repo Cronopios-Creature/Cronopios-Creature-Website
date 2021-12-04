@@ -271,8 +271,8 @@ background: radial-gradient(circle, rgba(251,242,224,1) 0%, rgba(6,12,32,1) 73%,
 }
 
 .active2, .accordion:hover {
-  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,12,32,1) 42%, rgba(251,242,224,1) 100%);
+ background: rgb(6,12,32);
+background: linear-gradient(90deg, rgba(6,12,32,1) 0%, rgba(251,242,224,1) 100%, rgba(0,0,0,1) 100%);
 }
 /*FONDO DEL CARRUSEL*/
 .active{

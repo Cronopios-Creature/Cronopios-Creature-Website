@@ -153,7 +153,7 @@ nav.sticky {
   top: 0;
   width: 100%;
   z-index: 99;
-    max-width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -162,7 +162,7 @@ nav.sticky {
   color: white;
   background-color: #fbf2e0;
   -webkit-box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47); 
-box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47);
+  box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47);
   border-radius: 0; 
   border-bottom-left-radius:5px;
   border-bottom-right-radius:5px;
@@ -180,8 +180,6 @@ box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47);
   text-decoration: none;
   font-family: kefa;
   font-size: 12px;
-}
-
 }
 
 .nav a:hover {
@@ -229,7 +227,7 @@ box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47);
   padding: 10px 20px;
 
 }
-#title{
+#img-border{
   border-radius: 5px;
 }
 

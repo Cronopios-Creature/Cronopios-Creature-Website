@@ -341,6 +341,7 @@ button {
 .lorem_text {
     width: 100%;
     float: left;
+    font-family: kefa;
     font-size: 14px;
     color: black;
     margin-left: 0px;
@@ -352,6 +353,7 @@ button {
     background-color: black;
     height: 50px;
     text-align: center;
+    font-family: kefa;
     font-size: 20px;
     border-radius: 5px;
 }
@@ -362,6 +364,7 @@ button {
     background-color: #232221;
     height: 50px;
     text-align: center;
+    font-family: kefa;
     font-size: 20px;
     margin-left: 20px;
   border-radius: 5px;

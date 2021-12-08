@@ -13,18 +13,19 @@ html {
   top: 0;
   left: 0;
   text-align: center;
-  opacity: 0;
+  opacity: ;
   background-color: #fbf2e0;
-  z-index: 99;
+  z-index: 1000;
 }
 
 #loading-image {
+  position: absolute;
+  left: 620px;
+  z-index: 100;
   margin-top: 250px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 100;
 }
+
 
 @font-face{
   font-family: kefa;

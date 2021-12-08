@@ -31,3 +31,12 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+/* Responsive */
+function myFunction() {
+  var x = document.getElementById("nav");
+  if (x.className === "sticky") {
+    x.className += " responsive";
+  } else {
+    x.className = "sticky";
+  }
+}

@@ -282,7 +282,7 @@ a:hover {
   font-size: 18px;
   border: none;
   outline: none;
-  box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47);
+  background-color: #060c20;
   color: white;
   cursor: pointer;
   padding: 15px;

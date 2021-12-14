@@ -235,7 +235,7 @@ nav a:hover {
   .sticky.responsive a {
     float: none;
     display: block;
-    text-align: left;
+    text-align:  right;
 
   }
 
@@ -421,3 +421,4 @@ button {
 #fbf2e0
 #060c20
 */
+

@@ -19,10 +19,11 @@ html {
 }
 
 #loading-image {
-  position: absolute;
-  left: 620px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 100;
-  margin-top: 250px;
+  margin-top: 150px;
   display: block;
 }
 
@@ -213,8 +214,14 @@ nav .nav-item{
 
 nav a:hover {
   color: grey;
+  
 }
-@media screen and (max-width: 600px) {
+nav .gallery-item{
+  color: brown; 
+}
+
+
+@media screen and (max-width: 800px) {
   .sticky a:not(:first-child) {display: none;}
   .sticky a.icon {
     float: right;
@@ -223,7 +230,7 @@ nav a:hover {
 }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .sticky.responsive {position: fixed;}
   .sticky.responsive a.icon {
     position: absolute;
@@ -251,27 +258,9 @@ a:hover {
   max-width: 1500px;
   height: auto;
 }
+
 /* Footer */
-.icons{
-  bottom: 0;
-  width: 100%;
-  z-index: 1;
 
-  color: white;
-  background-color: #060c20;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 15px 0px;
-  border-radius: 0; 
-
-  height: 80px;
-
-}
-.icons img{
-  padding: 10px 20px;
-
-}
-#img-border{
-  border-radius: 5px;
-}
 
 #myBtn {
   z-index: 200;
@@ -416,6 +405,69 @@ button {
 }
 
 
+
+
+/*footer*/
+
+footer {
+  overflow: hidden;
+
+}
+
+footer {
+  left: 0;
+  float: left;
+  display: block;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  height: 55px;
+  z-index: 99;
+
+
+  }  
+footer.sticky {
+  
+  bottom: 0;
+  width: 100%;
+  background-color: #060c20;
+  width: 100%;
+  z-index: 99;
+  max-width: 1024px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+
+footer a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 28px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: kefa;
+  padding-top: 0;
+  font-weight: bold;
+
+
+}
+footer .nav-item{
+  display: inline-block;
+  position: relative;
+  bottom: 0;
+}
+
+footer a:hover {
+  color: grey;
+}
 
 /* Main Colors 
 #fbf2e0

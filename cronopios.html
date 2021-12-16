@@ -150,10 +150,53 @@ div.desc {
   }
 }
 </style>
+<style type="text/css">
+
+/* softprogress bar CSS */
+.softprogress *:not([code-softprogress]) {
+  margin: 5px 0;
+  font-size: 16px;
+}
+.softprogress {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.softprogress [code-softprogress] {
+  height: 15px;
+  box-shadow: 0 0 1px 1px rgba(0, 20, 0, 0.35) inset;
+  border-radius: 15px;
+  margin: 5px 0 10px 0;
+  overflow: hidden;
+  background-color: #fbf2e0;
+}
+[code-softprogress]::after {
+  content: "hahaha";
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: brown;
+  width: 0;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: brown;
+  border-radius: 15px;
+  padding: 0 3px;
+  transition: 2s;
+}
+[code-softprogress].run-softprogress::after {
+  content: attr(code-softprogress) "%";
+  width: var(--run-softprogress);
+}
+/* End softprogress bar CSS */
+</style>
 </head>
 <body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
+<!-- Loading Page -->
 <div id="loading">
-  <img id="loading-image" src="img/loading.gif" Loading..." />
+  <img id="loading-image" src="img/loading.gif" Loading... />
 </div>
     <div class="boxed-page">
         
@@ -162,7 +205,7 @@ div.desc {
         <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/arrow.png">  </button>
     
         </a>
-        
+<!-- Nav -->
         <nav class='sticky' id='nav'>
             <a href="index.html" class="nav-item"><img src="img/logo.jpg" style="max-width: 60%; "></a>
             <u><a href="cronopios.html" class="nav-item aux gallery-item" style=" position: absolute; top: 15px;  ">GALLERY</a></li></u> 
@@ -189,6 +232,7 @@ div.desc {
         </nav>
 
 
+
         
     </div>
 
@@ -204,214 +248,334 @@ div.desc {
 
             
                 </div >
-                <p id="FAQ"></p>
+                <p></p>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div  class="FAQ" style= "text-align: center;" data-aos="fade-right">
+                <div  class="" style= "text-align: center;" data-aos="fade-right">
                         <h2 style="text-align:center; font-weight: bold;">                   CRONOPIOS</h1>
                 </div>
                 <br>
                     <div data-aos="fade-up">
-                     <!---   
-                    <div class="responsive"> 
-                       <div class="gallery">
-                            <img id="myImg" src="img/cronopio1.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
-                        </div> 
-                        </div>   
-                         The Modal -->
-                        <div class="responsive">
+ 
+                            <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio0.png" width="600" height="400">
-                            <div class="desc">Genesis Cronpio</div>
+                            <div class="desc">Genesis Cronpio
+                                  <div class="softprogress">
+                                        <div alt="rareness" code-softprogress="45"></div>
+                                  </div>  
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio43.png" width="600" height="400">
-                            <div class="desc">Cronopio 43</div>
+                            <div class="desc">Cronopio 43
+                                    <div class="softprogress">
+                                        <div code-softprogress="90"></div>
+                                  </div>       
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio31.png" width="600" height="400">
-                            <div class="desc">Cronopio 31</div>
+                            <div class="desc">Cronopio 31
+                                    <div class="softprogress">
+                                        <div code-softprogress="30"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio29.png" width="600" height="400">
-                            <div class="desc">Cronopio 29</div>
+                            <div class="desc">Cronopio 29
+                                    <div class="softprogress">
+                                        <div code-softprogress="60"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio4.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="50"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio1.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio1.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="10"></div>
+                                  </div> 
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio5.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="20"></div>
+                                  </div> 
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio1.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio1.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio6.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio1.png" width="600" height="400">
                             <div class="desc">Add a description of the image here</div>
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>                               
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio1.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio7.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio1.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio8.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                     <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio9.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio1.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio2.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio3.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio1.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio4.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio1.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio1.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio5.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio1.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio1.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio6.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio1.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio1.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio7.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                         <div class="responsive">
                             <div class="gallery">
                                 <img class="myImages" id="myImg" src="img/cronopio1.png" width="600" height="400">
-                            <div class="desc">Add a description of the image here</div>
+                            <div class="desc">Add a description of the image here
+                                    <div class="softprogress">
+                                        <div code-softprogress="18"></div>
+                                  </div>   
+                            </div>
                             </div>
                         </div>
                     
@@ -426,6 +590,7 @@ div.desc {
 
                         </div>                
                             <div class="clearfix"></div>  
+
                     
                     <br>
                     <br>
@@ -499,6 +664,23 @@ div.desc {
       $(window).on("load",function() {
         $('#loading').hide();
       });
+</script>
+<script type="text/javascript">
+    window.onload = function () {
+  if (
+    document.querySelectorAll(".softprogress").length > 0 &&
+    document.querySelectorAll(".softprogress [code-softprogress]").length > 0
+  ) {
+    document
+      .querySelectorAll(".softprogress [code-softprogress]")
+      .forEach((x) => runsoftprogress(x));
+  }};
+function runsoftprogress(el) {
+  el.className = "run-softprogress";
+  el.setAttribute(
+    "style",
+    `--run-softprogress:${el.getAttribute("code-softprogress")}%;`
+  );}
 </script>
 
 

@@ -418,7 +418,9 @@ body {
 
 @media (min-width: 1200px) {
   .boxed-page {
-    width: 1024px; }
+    width: 1024px; 
+    border-radius: 5px;
+  }
     .boxed-page .container {
       max-width: 1080px;
       padding-left: 30px;
@@ -504,14 +506,17 @@ a:hover {
     max-width: 200px;
     top: 1000px;
     z-index: 2;
-    position: relative;
+    position: absolute;
+
 
 }
 .fun-image:hover{
   transform: scale(1.1);
 }
 
-
+.fun-image2:hover{
+  transform: scale(1.1);
+}
 /*
 nav {
   overflow: hidden;
@@ -842,5 +847,4 @@ footer a:hover{
 #fbf2e0
 #060c20
 */
-
 

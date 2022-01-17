@@ -587,7 +587,12 @@ nav #gallery-item{
   color: brown;
   font-size: 20px; 
 }
-
+nav #gallery-item:hover{
+  -webkit-text-stroke: .01px #F2F099 !important;
+}
+nav #story-item:hover{
+  -webkit-text-stroke: .01px #F2F099 !important;
+}
 nav img:hover{
   transform: scale(1.1);
 }

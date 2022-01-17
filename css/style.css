@@ -510,21 +510,7 @@ a:hover {
 .fun-image:hover{
   transform: scale(1.1);
 }
-.fun-image2{
-    right: -22%;
-    max-width: 150%;
-    top: 2000px;
-    z-index: 2;
-    position: relative;
 
-}
-.fun-image2{
-  overflow: hidden !important;
-  
-}
-.fun-image2:hover{
-  transform: scale(1.1);
-}
 
 /*
 nav {

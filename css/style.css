@@ -595,6 +595,10 @@ nav #gallery-item{
 nav img:hover{
   transform: scale(1.1);
 }
+div.desc{
+  font-family: kefa !important;
+  font-size: 20px;
+}
 /* Footer */
 
 

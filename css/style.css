@@ -504,7 +504,7 @@ a:hover {
     max-width: 200px;
     top: 1000px;
     z-index: 2;
-    position: absolute;
+    position: relative;
 
 }
 .fun-image:hover{
@@ -515,11 +515,12 @@ a:hover {
     max-width: 150%;
     top: 2000px;
     z-index: 2;
-    position: absolute;
+    position: relative;
 
 }
 .fun-image2{
   overflow: hidden !important;
+  
 }
 .fun-image2:hover{
   transform: scale(1.1);

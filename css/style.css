@@ -518,6 +518,9 @@ a:hover {
     position: absolute;
 
 }
+.fun-image2{
+  overflow: hidden !important;
+}
 .fun-image2:hover{
   transform: scale(1.1);
 }

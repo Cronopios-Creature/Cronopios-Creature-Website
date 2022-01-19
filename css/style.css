@@ -782,7 +782,11 @@ button {
 
 
 /*footer*/
-
+.grass{
+ position: relative;
+ top: 0;
+ width: 1500px;
+}
 footer {
   overflow: hidden;
 

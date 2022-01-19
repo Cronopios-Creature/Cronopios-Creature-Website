@@ -643,10 +643,12 @@ background: radial-gradient(circle, rgba(251,242,224,1) 0%, rgba(6,12,32,1) 73%,
 .active2, .accordion:hover {
   -webkit-box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47); 
   box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47);
+  color:#f2f099;
 }
 .story-title:hover{
   -webkit-box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47); 
-  box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47);  
+  box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47);
+  color:#f2f099;  
 }
 /*FONDO DEL CARRUSEL*/
 .active{
@@ -752,7 +754,9 @@ button {
     border-radius: 5px;
 }
 .boynow_bt:hover{
-    -webkit-box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47); 
+  transform: scale(1.1);
+  color:#f2f099;
+  -webkit-box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47); 
   box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47);
 }
 .contact_bt {
@@ -768,10 +772,11 @@ button {
   border-radius: 5px;
 }
 .contact_bt:hover{
-    -webkit-box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47); 
+  transform: scale(1.1);
+  color:#f2f099;
+  -webkit-box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47); 
   box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47);
 }
-
 .FAQ p{
  text-align: center !important;
 

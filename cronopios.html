@@ -194,6 +194,35 @@ div.desc {
   width: var(--run-softprogress);
 }
 /* End softprogress bar CSS */
+.softprogress .softprogresstext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fbf2e0;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.softprogress:hover .softprogresstext {
+  visibility: visible;
+}
+.buyer{
+    color: #fbf2e0;
+    background-color: black;
+    border-radius: 25px;
+    padding: 5px 25px;
+    font-size: 20px !important;
+}
+
+.buyer:hover{
+  transform: scale(1.1);
+  color:#f2f099;
+  -webkit-box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47); 
+  box-shadow: -1px -2px 13px 9px rgba(242,240,153,0.47);
+}
 </style>
 </head>
 <body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout" style="background-color: #060c20;">

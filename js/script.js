@@ -145,8 +145,12 @@ function optionSelected(answer){
     let correcAns = questions[que_count].answer; 
     const allOptions = option_list.children.length; 
     
-    if(userAns == userAns){ 
+    if(userAns == correcAns){ 
         userScore += 1; 
+        answer.classList.add("correct"); 
+
+    }
+    else if(userAns == userAns){
         answer.classList.add("correct"); 
 
     }
@@ -169,22 +173,24 @@ function showResult(){
         let scoreTag = 'Congrats! 🎉, You are a black cronopio, you deal grass the same way you got curiousity to shine in the dark, awake like a dog in chrismas, people know you the man when it comes to adventure</span><br><img src="img/cronopio0.png"  width="200px"/>';
         scoreText.innerHTML = scoreTag;
     }
+    else{
+        let scoreTag = 'Congrats! 🎉, You are a black cronopio, you deal grass the same way you got curiousity to shine in the dark, awake like a dog in chrismas, people know you the man when it comes to adventure</span><br><img src="img/cronopio0.png"  width="200px"/>';
+        scoreText.innerHTML = scoreTag;        
+    }
 
 }
 
 function startTimer(time){
-    counter = setInterval(timer, 1000);
+    counter = setInterval(timer, 1000000);
     function timer(){
         timeCount.textContent = time; 
         time--; 
-        if(time < 9){ 
+        if(time < 10000000){ 
             let addZero = timeCount.textContent; 
             timeCount.textContent = "0" + addZero; 
         }
 
-            for(i=0; i < allOptions; i++){
-                option_list.children[i].classList.add("disabled"); 
-            }
+
             next_btn.classList.add("show"); 
         
     }
@@ -193,7 +199,7 @@ function startTimer(time){
 function startTimerLine(time){
     counterLine = setInterval(timer, 29);
     function timer(){
-        time += 1; 
+        time += 0; 
         time_line.style.width = time + "px";
         if(time > 549){ 
             clearInterval(counterLine); 
@@ -205,4 +211,5 @@ function queCounter(index){
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  
 }
+
 
